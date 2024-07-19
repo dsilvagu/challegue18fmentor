@@ -1,0 +1,18 @@
+---
+import Card1 from "./Card1.astro";
+import Card3 from "./Card3.astro";
+import img1 from "../images/icon-blacklist.svg";
+import img2 from "../images/icon-text.svg";
+import img3 from "../images/icon-preview.svg";
+---
+
+<div class="mx-auto text-center flex flex-col justify-center gap-10 mt-10 ">
+    <Card1 text1="Supercharge your workflow" text2="We're got the tools to boost your productivity" />
+    <div class="mt-14 flex flex-col gap-16 lg:flex-row lg:justify-center lg:items-center ">
+        <Card3 text1="Create blacklists" text2="Ensure sensitive information never makes its way to your clipboard by excluding certain sources." img={img1.src} />
+
+        <Card3 text1="Plain text snippets" text2="Remove unwanted formatting from copied text for a consistent look" img={img2.src} />
+
+        <Card3 text1="Sneak preview" text2="Quick preview of all snippets on your Clipboard for easy access." img={img3.src} />
+    </div>
+</div>

@@ -1,0 +1,12 @@
+---
+interface Props {
+    text: string;
+    styles: string;
+}
+
+const {text, styles} = Astro.props;
+---
+
+<button class="border-b-2 text-sm font-medium text-[#FFFF] py-3 rounded-3xl shadow-lg transition duration-500" class:list={styles}>
+    {text}
+</button>

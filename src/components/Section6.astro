@@ -1,0 +1,12 @@
+---
+import img1 from '../images/logo.svg'
+import Button from './Button.astro'
+import Card from './Card.astro'
+---
+<div class="mx-auto text-center flex flex-col gap-8 justify-center mb-32">
+    <Card text1='Clipboard for iOS and Mac Os' text2="Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard" />
+    <div class="flex flex-col gap-5 lg:flex-row lg:mx-auto lg:mt-5">
+        <Button text='Download for IOS' styles='shadow-pscyan bg-pscyan/90 border-pscyan lg:px-10 hover:bg-pscyan/80' />
+        <Button text='Download for Mac' styles='shadow-plblue bg-plblue/90 border-plblue lg:px-10 hover:bg-plblue/80' />
+    </div>
+</div>

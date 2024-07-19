@@ -1,0 +1,17 @@
+---
+import img1 from '../images/image-computer.png';
+import Card2 from './Card2.astro';
+---
+
+<div class="text-center flex flex-col gap-16 min-h-screen justify-center  lg:gap-32 lg:flex-row lg:min-h-full lg:my-32 lg:items-center">
+    <img class="lg:w-1/2 lg:object-cover " src={img1.src} alt="">
+    <div class="flex gap-16 flex-col lg:w-1/2 lg:items-start lg:text-left ">
+        <div class="flex gap-16 flex-col lg:w-2/5">
+            <Card2 text1='Quick Search' text2='Easily search your snippets by content, category, web adderss, application, and more.' />
+            <Card2 text1='iCloud Sync' text2='Instantly saves and syncs snippets across all your devices' />
+            <Card2 text1='Complete History' text2='Retrieve any snippets from the first moment you started using the app.' />
+        </div>
+        
+    </div>
+        
+</div>
